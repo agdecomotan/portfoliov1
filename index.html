@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ane</title>
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./dist/fullpage.js"></script>
+	
+	<script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+	<style type="text/css">
+		#section0{
+			background-image: url(imgs/bg.jpg);
+			background-position: top;
+		}
+		#section1{
+			background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+			background: -webkit-linear-gradient(#334c5a, #878787);
+			background: linear-gradient(#334c5a,#878787);
+		}
+		#section2{
+			background-image: url(imgs/bg.jpg);
+			background-position: bottom;
+		}
+		#section3{
+			background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+			background: -webkit-linear-gradient(#878787, #334c5a);
+			background: linear-gradient(#878787,#334c5a);
+		}
+		#section4{
+			background-image: url(imgs/pic.jpg);
+			background-position: bottom;
+		}
+		#section4 div{
+			vertical-align: bottom;
+		}
+		.section{
+			background-color: #878787 !important;
+		}
+		.title{
+			color: #f2f3f7;
+		}		
+		.content{
+			color: #071218;
+		}
+		.experience-div{
+			display: flex;
+			flex-direction: column;
+		}
+		div.experience-div p {
+  			color: #ffffff;
+			background: rgba(7, 18, 24, 0.5);
+		}
+		div.contact-div {
+			background: rgba(7, 18, 24, 0.8);
+		}
+		div.contact-div p {
+  			color: #ffffff;
+  			padding: 20px;
+		}
+
+		 #actions{
+	        position:fixed;
+	        top: 73px;
+	        left: 30px;
+	        z-index: 99999;
+	    }
+	    #actions a{
+	        background: rgba(0,0,0,0.8);
+	        padding: 7px;
+	        margin: 2px;
+	        color: #ccc;
+	        display: inline-block;
+	    }
+	    #actions a:hover{
+	        color: #fff;
+	        background: #81A140;
+	    }
+	</style>
+</head>
+
+<body>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<h1>Anelie Decomotan</h1>
+		<p class="content">9 Years Fullstack Developer</p>
+		<p class="content">Angular | Java | Mobile Development</p>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1 class="title">Technical Skills</h1>
+			<p class="content">• Angular • Java (Spring Framework) • C# (.NET Framework 3.5/4.0) • Microsoft SQL Server • HTML • PHP • Python •</p>
+			<br/>
+			<p class="content">• Windows Presentation Foundation (WPF) • ASP.NET • Angular JS • Android Applications Development •</p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1 class="content">Work Experience</h1>
+			<div class="experience-div">
+				<br/>
+				<p class="title">
+					<b>Systems Developer</b><br>
+					Teloworks Philippines Inc.<br>
+					6F SSHG Building, 105 Paseo De Roxas,<br>
+					Makati City 1226<br>
+					April 2014 - present
+				</p>
+				<br/>
+				<p class="title">
+					<b>Software Developer</b><br>
+					Everyone Technologies, Inc.<br>
+					2nd Level, The Atrium,<br>
+					General Luna Street,<br>
+					Iloilo City 5000<br>
+					March 2012 – March 2014
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+	    <div class="slide">
+			<div class="intro">
+			</div>
+		</div>
+	    <div class="slide">
+			<div class="intro">
+				
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<div class="contact-div">
+				<p class="content">
+					AGDecomotan@yahoo.com<br>
+ 					https://github.com/agdecomotan<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="examples.js"></script>
+</body>
+</html>

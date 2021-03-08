@@ -46,7 +46,12 @@
 			background-size: cover;
 		}
 		#section1{
-			background-color: #F4EEDC !important;
+			background-image: url(imgs/techbg.png);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-position: center;
+			background-size: cover;
 		}
 		#section2{
 			
@@ -60,7 +65,7 @@
 			background-color: #C7CED6 !important;
 		}
 		#section4 div{
-			vertical-align: bottom;
+			
 		}
 		.section{
 			background-color: #7E7C7F !important;
@@ -77,18 +82,24 @@
 			display: flex;
 			flex-direction: column;
 		}
-		div.experience-div p {
-  			color: #334c5a;
-			background: rgb(244, 238, 220, 0.8);
+		#section1 p {
+			text-align: left;
 		}
-		div.contact-div {
-			background: rgba(7, 18, 24, 0.8);
+		div.experience-div p {
+			background: rgb(244, 238, 220, 0.8);
+			border-radius: 10px;
+    		padding: 20px;
 		}
 		div.contact-div p {
-  			color: #ffffff;
   			padding: 20px;
+  			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
-
+		div.contact-div img {
+  			border-radius: 20px;
+		}
 		 #actions{
 	        position:fixed;
 	        top: 73px;
@@ -119,9 +130,17 @@
 	<div class="section" id="section1">
 		<div class="intro">
 			<h1 class="title">Technical Skills</h1>
-			<p class="content">• Angular • Java (Spring Framework) • C# (.NET Framework 3.5/4.0) • Microsoft SQL Server • HTML • PHP • Python •</p>
+			<p class="content">• Angular • Java (Spring Framework) • </br>
+			• C# (.NET Framework 3.5/4.0) • </br>
+			• Microsoft SQL Server • 
 			<br/>
-			<p class="content">• Windows Presentation Foundation (WPF) • ASP.NET • Angular JS • Android Applications Development •</p>
+			<br/>
+			• HTML • PHP •<br/>
+			• Windows Presentation Foundation (WPF) • <br/>
+			• ASP.NET •
+			<br/>
+			<br/>
+			• Angular JS • Mobile Development (Expo) •</p>
 		</div>
 	</div>
 	<div class="section" id="section2">
@@ -129,7 +148,7 @@
 			<h1 class="content">Work Experience</h1>
 			<div class="experience-div">
 				<br/>
-				<p class="title">
+				<p class="content">
 					<b>Systems Developer</b><br>
 					Teloworks Philippines Inc.<br>
 					6F SSHG Building, 105 Paseo De Roxas,<br>
@@ -137,7 +156,7 @@
 					April 2014 - present
 				</p>
 				<br/>
-				<p class="title">
+				<p class="content">
 					<b>Software Developer</b><br>
 					Everyone Technologies, Inc.<br>
 					2nd Level, The Atrium,<br>
@@ -151,12 +170,12 @@
 	<div class="section" id="section3">
 	    <div class="slide">
 			<div class="intro">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Dx41Fii7hcY?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="854" height="480" src="https://www.youtube.com/embed/Dx41Fii7hcY?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	    <div class="slide">
 			<div class="intro">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/5aUxajKCZ5s?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="854" height="480" src="https://www.youtube.com/embed/5aUxajKCZ5s?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -164,9 +183,11 @@
 		<div class="intro">
 			<div class="contact-div">
 				<p class="content">
-					<!-- AGDecomotan@yahoo.com<br>
- 					https://github.com/agdecomotan<br> -->
+					<b>Contact me</b><br>
+					AGDecomotan@yahoo.com<br>
+ 					https://github.com/agdecomotan<br>
 				</p>
+			<img src="imgs/contactbg.png" width="854" height="480">
 			</div>
 		</div>
 	</div>
